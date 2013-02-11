@@ -487,6 +487,7 @@ int control_usb_storage_set_lun(Volume* vol, bool enable, const char *lun_file) 
     }
 }
 
+#define STRINGIFY(s) #s
 int control_usb_storage_for_lun(Volume* vol, bool enable) {
     static const char* lun_files[] = {
 //#ifdef BOARD_UMS_LUNFILE
